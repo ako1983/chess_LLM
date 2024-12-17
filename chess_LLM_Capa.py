@@ -28,15 +28,15 @@ load_dotenv(find_dotenv())
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 
-# Function to download text file from a URL
-def download_text_file(url):
-    response = requests.get(url)
-    return response.text
+# # Function to download text file from a URL
+# def download_text_file(url):
+#     response = requests.get(url)
+#     return response.text
 
-# Function to read text file
-def read_text_file(file_path):
-    with open(file_path, 'r') as file:
-        return file.read()
+# # Function to read text file
+# def read_text_file(file_path):
+#     with open(file_path, 'r') as file:
+#         return file.read()
 
 
 # Function to preprocess text
@@ -57,8 +57,8 @@ def preprocess_text(text):
 # # Part1: Chess Fundamentals, by Capablanca
 
 # URL of the Gutenberg project book
-book_url = 'https://www.gutenberg.org/files/33870/33870-8.txt'  # EBook of Chess Fundamentals, by Capablanca
-
+# book_url = 'https://www.gutenberg.org/files/33870/33870-8.txt'  # EBook of Chess Fundamentals, by Capablanca
+# this will change to perpetual blog
 # Download and read the text file
 text_from_web = download_text_file(book_url)
 
